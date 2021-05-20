@@ -9,7 +9,7 @@ img{border: none;vertical-align: top;}
 header, nav, section, footer{display: block;}
 address{font-style: normal;}
 
-body{font-family: SCoreDream,"맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, sans-serif;}
+body{font-family: SCoreDream,"맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, sans-serif; font-size: 16px; font-weight: 400;}
 
 /* common class */
 .blind{width: 1px;height: 1px; overflow: hidden; position: absolute; border: none; clip: rect(1px 1px 1px 1px); clip-path: inset(50%);}
@@ -28,12 +28,12 @@ body{font-family: SCoreDream,"맑은 고딕", "Malgun Gothic", "나눔고딕", N
 /* 푸터 */
 
 
-.footer{height: 1080px;width: 100%;background: url("../images/01_common/footerbg.png") no-repeat;color: #fff;}
+.footer{height: 1080px;width: 100%;background: url("../images/01_common/footerbg.png") no-repeat; background-size: cover; color: #fff; margin: 0 auto;}
 .f_block{padding-left: 25px;position: relative;margin-left: 36px;}
 .f_block::after{content: "";height: 100%;width: 6px;background: #fff;top: 0;left: 0;position: absolute;}
 
 
-.wrap{top: 204px;left: 354px;position: relative;align-items: left;}
+.wrap{top: 204px;left: 354px;position: relative;align-items: left; margin: 0 auto;}
 #block1 img{width: 241px;height: 72px;}
 #block2{width: 407px;height: 370px;}
 #block2 p:nth-child(1){font-size: 25px;line-height: 1.87;}

@@ -8,6 +8,7 @@
   <title> 고구려 대학교 도서관 </title>
   <link rel="shortcut" href="../images/01_common/kgr_logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.css">
   <link rel="stylesheet" href="../css/library.css">
   <script src="../js/jquery-1.12.4.min.js"></script>
   <script src="../js/library_common.js"></script>
@@ -22,7 +23,27 @@
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-
+        breakpoints: {
+          // when window width is >= 1920px
+          1920: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          },
+          // when window width is >= 1330px
+          1330: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        },
+        var: swiper = new Swiper("#cnt1 .swiper-container", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        }),
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
@@ -30,23 +51,11 @@
         },
 
         autoplay: {
-          delay: 1000, //1초=1000
+          delay: 2000, //1초=1000
           disableOnInteraction: false, //스와이프 후에 자동실행 비활성화를 차단(자동실행 유지)
         },
       });
-
-      //정지와 재생 스크립트 추가
-      $('#cnt1 .btn_stop').on('click', function () {
-        $(this).hide().siblings('button').show();
-        swiper1.autoplay.stop();
-      });
-      $('#cnt1 .btn_play').on('click', function () {
-        $(this).hide().siblings('button').show();
-        swiper1.autoplay.start();
-      });
-
     });
-
   </script>
 </head>
 
@@ -120,12 +129,12 @@
       </nav>
       <div class="gnb_bg"></div>
     </div>
-    
+
   </header>
   <section id="content">
     <div id="cnt1">
       <h2>이달의 추천 도서</h2>
-      <!-- <div class="swiper-container">
+      <div class="swiper-container">
         <div class="swiper-wrapper d_f">
           <div class="swiper-slide">
             <a href=""><img src="../images/07_library/bookcover/cover03.jpg" alt=""></a>
@@ -142,15 +151,30 @@
           <div class="swiper-slide">
             <a href=""><img src="../images/07_library/bookcover/cover05.jpg" alt=""></a>
           </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../images/07_library/bookcover/cover03.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../images/07_library/bookcover/cover02.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../images/07_library/bookcover/cover01.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../images/07_library/bookcover/cover04.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="../images/07_library/bookcover/cover05.jpg" alt=""></a>
+          </div>
         </div>
-      </div> -->
+      </div>
       <!-- <a href="">실격당한 자들을 위한 변론</a>
 <a href="">우아한 연인</a>
 <a href="">돈키호테</a>
 <a href="">결심만 하는 당신에게</a>
 <a href="">미드나잇 라이브러리</a> -->
 
-      <ul class="cover">
+      <!--  <ul class="cover">
         <li>
           <a href=""><img src="../images/07_library/bookcover/cover03.jpg" alt=""></a>
         </li>
@@ -166,14 +190,14 @@
         <li>
           <a href=""><img src="../images/07_library/bookcover/cover05.jpg" alt=""></a>
         </li>
-      </ul>
-      <ul class="book_tit">
+      </ul> -->
+      <!-- <ul class="book_tit">
         <li><a href="">실격당한 자들을 위한 변론</a></li>
         <li><a href="">우아한 연인</a></li>
         <li><a href="">돈키호테</a></li>
         <li><a href="">결심만 하는 당신에게</a></li>
         <li><a href="">미드나잇 라이브러리</a></li>
-      </ul>
+      </ul> -->
     </div> <!-- cnt1 -->
 
     <div id="cnt2">
@@ -320,7 +344,7 @@
           <ul>
             <li><a href="">공지사항</a></li>
             <li><a href="">분실물 습득</a></li>
-            <li><a href="">Q&A</a></li>
+            <li><a href="">Q&amp;A</a></li>
             <li><a href="">건의함</a></li>
           </ul>
         </li>
