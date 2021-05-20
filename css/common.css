@@ -19,6 +19,7 @@ body{font-family: SCoreDream,"맑은 고딕", "Malgun Gothic", "나눔고딕", N
 .f_r{float: right;}
 .p_r{position: relative;}
 .p_a{position: absolute;}
+.bd_box{box-sizing: border-box;}
 
 /* #skip */
 #skip a{position: absolute; top: 0; left: -9999px; z-index: 1000;}
