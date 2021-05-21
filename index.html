@@ -5,102 +5,110 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> 고구려대학교</title>
-  <link rel="icon" href="images/01_common/kgr_logo.ico" type="image/x-icon">
+  <title> 고구려대학교 인덱스 </title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/common.js"></script>
 </head>
 
 <body>
-  <div id="wrap" class="wrap p_r">
+  <div id="wrap" class="p_r">
     <div id="skip"></div>
     <header id="header">
       <h1 class="logo">
         <a href="">
-          <span class="blind">고구려대학교</span>
+          <p class="blind">고구려대학교로고</p>
         </a>
       </h1>
       <div>
         <nav id="gnb">
-            <h2 class="blind">주메뉴</h2>
-            <ul>
-                <li><a href="">대학소개</a>
-                    <ul>
-                        <li><a href="info/president.html">인사말</a></li>
-                        <li><a href="info/history.html">대학연혁</a></li>
-                        <li><a href="fix.html">대학비전</a></li>
-                        <li><a href="fix.html">학교상징</a></li>
-                        <li><a href="fix.html">연락처</a></li>
-                        <li><a href="info/visit.html">찾아오시는 길</a></li>
-                    </ul>
-                </li>
-                <li><a href="">학과소개</a>
-                    <ul>
-                        <li><a href="major/dental.html">치위생과</a></li>
-                        <li><a href="fix.html">곤충산업복지과</a></li>
-                        <li><a href="fix.html">미용관광복지과</a></li>
-                        <li><a href="fix.html">토목조경과</a></li>
-                        <li><a href="fix.html">에너지복지과</a></li>
-                        <li><a href="fix.html">유아교육과</a></li>
-                    </ul>
-                </li>
-                <li><a href="">대학생활</a>
-                    <ul>
-                        <li><a href="fix.html">학생지원</a></li>
-                        <li><a href="campus/festival.html">학교문화</a></li>
-                        <li><a href="campus/notice.html">알림/참여</a></li>
-                    </ul>
-                </li>
-                <li><a href="">학사지원</a>
-                    <ul>
-                        <li><a href="fix.html">학사일정</a></li>
-                        <li><a href="fix.html">장학제도</a></li>
-                        <li><a href="fix.html">학사 Q&amp;A</a></li>
-                    </ul>
-                </li>
-                <li><a href="fix.html">입학안내</a>
-                    <ul>
-                        <li><a href="fix.html">수시 및 정시</a></li>
-                        <li><a href="guide/matri.html" target="_blank" title="새 창 열림">입학 정보</a></li>
-                    </ul>
-                </li>
-            </ul>
+          <h2 class="blind">주메뉴</h2>
+          <ul>
+            <li class=""><a href="">대학소개</a>
+              <ul>
+                <li><a href="">인사말</a></li>
+                <li><a href="">대학연혁</a></li>
+                <li><a href="">대학비전</a></li>
+                <li><a href="">학교상징</a></li>
+                <li><a href="">연락처</a></li>
+                <li><a href="">찾아오시는 길</a></li>
+              </ul>
+            </li>
+            <li><a href="">학과소개</a>
+              <ul>
+                <li><a href="">치위생과</a></li>
+                <li><a href="">곤충산업복지과</a></li>
+                <li><a href="">미용관광복지과</a></li>
+                <li><a href="">토목조경과</a></li>
+                <li><a href="">에너지복지과</a></li>
+                <li><a href="">유아교육과</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="">대학생활</a>
+              <ul>
+                <li><a href="">학생지원</a></li>
+                <li><a href="">학교문화</a></li>
+                <li><a href="">알림/참여</a></li>
+                <li><a href="" title="새 창 열림">도서관</a></li>
+              </ul>
+            </li>
+            <li><a href="">학사지원</a>
+              <ul>
+                <li><a href="">학사일정</a></li>
+                <li><a href="">장학제도</a></li>
+                <li><a href="">학사 Q&amp;A</a></li>
+              </ul>
+            </li>
+            <li class=""><a href="" title="새 창 열림">입학안내</a>
+              <ul>
+                <li><a href="">수시 및 정시</a></li>
+                <li><a href="">입학 정보</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-    </div>
+      </div>
       <div class="search">
         <a href=""></a>
       </div>
     </header>
     <section id="section">
-      <video id="video" poster="images/02_main/videothumbnail.jpg">
-        <!-- autoplay muted loop -->
-        <source src="video/kgr_video.mp4" type="video/mp4">
-      </video>
-      <img id="poster" src="images/02_main/poster_final.png" alt="무한한 기회의 고구려 대학교">
-      <div id="notice" alt="공지사항">
-        <a href="" class="news p_a"><img src="images/02_main/notice1_goods.png" alt=""></a>
-        <a href="" class="news p_a"><img src="images/02_main/notice2_fin_1.png" alt=""></a>
-        <a href="" class="news p_a"><img src="images/02_main/notice_3final.png" alt=""></a>
+      <h2 class="blind">고구려 대학 소개</h2>
+      <div class="visual_wrap">
+        <video id="video" poster="images/02_main/videothumbnail.jpg">          
+          <source src="video/kgr_video.mp4" type="video/mp4" autoplay muted loop
+           alt="고구려대학교의 주변 정경과 학생들의 모습을 보여준다">
+        </video>
+      </div>
+      <p id="poster"><img src="images/02_main/poster_final.png" alt="무한한 기회의 고구려 대학교"></p>
+      <div id="notice">
+        <!--  alt="공지사항" img 태그도 아닌데 alt 라니!!! -->
+        <h3 class="blind">공지사항</h3>
+        <a href="" class="news p_a"><img src="images/02_main/notice1_goods.png" alt="오막리지 굿즈 공모전 개최 2021년 5월 17일~ 2021년 5월 21일 개최. 자세한 사항은 사이트 참고"></a>
+        <a href="" class="news p_a"><img src="images/02_main/notice2_fin_1.png" alt="21회 유화 페스티벌 개최. 2021년 5월 17일~ 2021년 5월 21일 개최. 자세한 사항은 사이트 참고"></a>
+        <a href="" class="news p_a"><img src="images/02_main/notice_3final.png" alt="2022년 고구려대학교 수시 모집요강"></a>
       </div>
       <div id="qnapage" class="qnapage p_r">
-        <img src="images/02_main/qnapage_final2.jpg" alt="재학생에게 물어보는 큐앤에이" class="p_a">
-        <!-- <input type="image" src="images/02_main/searchbutton.png" class="search p_a f_l" alt="검색"></input> -->
+        <h3><img src="images/02_main/qnapage_final3.jpg" alt="재학생에게 물어보는 큐앤에이"></h3>
         <div id="searchb">
           <a href="">
-            <img src="images/02_main/search_effect.png" class="search_e p_a" alt="">
-            <img src="images/02_main/searchbutton.png" class="search p_a " alt="검색">
+            <img src="images/02_main/search_effect3.png" class="search_e p_a" alt="">
+            <img src="images/02_main/searchbutton2.png" class="search p_a " alt="검색">
           </a>
         </div>
         <div id="moreb">
           <a href="">
-            <img src="images/02_main/more_effect.png" class="more_e p_a" alt="">
-            <img src="images/02_main/moreanswers3.png" class="more p_a" alt="더 많은 답변 보기">
+            <img src="images/02_main/moreanswers4.png" class="more p_a" alt="더 많은 답변 보기">
+            <img src="images/02_main/more_effect2.png" class="more_e p_a" alt="">
           </a>
         </div>
+        <input id="input" type="text" placeholder="뭐든지 물어보세요!">
       </div>
     </section>
-    <footer id="footer" class="footer p_a">
-      <div class="wrap">
+    <footer id="footer" class="p_r">
+      <div class="wrap d_f">
         <div id="block1" class="f_l">
           <a href=""><img src="images/01_common/kgr_logo_long_white.png" alt="고구려 대학교"></a>
         </div>
@@ -121,7 +129,7 @@
           <div class="family d_f p_r">
             <a href="" class="btn_fopen p_r" role="button">학과홈페이지 바로가기</a>
             <ul>
-              <li><a href="major/dental.html">치위생과</a></li>
+              <li><a href="">치위생과</a></li>
               <li><a href="">곤충산업복지과</a></li>
               <li><a href="">미용관광복지과</a></li>
               <li><a href="">토목조경과</a></li>
@@ -133,7 +141,7 @@
           <div class="family d_f p_r">
             <a href="" class="btn_fopen p_r" role="button">부속기관 바로가기</a>
             <ul>
-              <li><a href="campus/library.html">도서관과</a></li>
+              <li><a href="">도서관과</a></li>
               <li><a href="">정보전산원</a></li>
               <li><a href="">생활관</a></li>
               <li><a href="">어학원</a></li>
@@ -149,10 +157,10 @@
             <li><a href="">입학안내</a></li>
           </ul>
           <ul class="f_navitem2">
-            <li><a href="">이사회 회의록 공개</a></li>
-            <li><a href="">예결산 공개</a></li>
-            <li><a href="">이메일 무단수집거부</a></li>
-            <li><a href="">개인정보 처리방침</a></li>
+            <li>이사회 회의록 공개</li>
+            <li>예결산 공개</li>
+            <li>이메일 무단수집거부</li>
+            <li>개인정보 처리방침</li>
           </ul>
         </div>
       </div>
