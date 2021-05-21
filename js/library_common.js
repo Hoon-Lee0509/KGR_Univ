@@ -2,18 +2,6 @@ $(document).ready(function () {
   var scrollT;
   var timer = 0;
 
-  //scroll 되면 검정 배경색 추가
-  $(window).on('scroll', function () {
-    clearTimeout(timer);
-
-    setTimeout(function () {
-      scrollT = $(this).scrollTop();
-
-      if (scrollT > 20) $('#header').addClass('bgchange');
-      else $('#header').removeClass('bgchange');
-    }, 50);
-  });
-
   //메뉴 열기와 닫기 : iOS에서는 display: none이었다 block으로 바뀌어도 포커스가 가지 못하는 버그가 발생함 -> visibility속성으로 대신함
   $('.btn_all').on('click', function () {
     if ($(this).hasClass('close')) { //닫기

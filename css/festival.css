@@ -10,11 +10,11 @@ body{margin: 0 auto;}
 .inner{max-width: 1280px;}
 .pb_50{padding-bottom: 50px; font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", NanumGothic, sans-serif;}
 
-#content .title_bg{width: 100%; height: 450px;background: url("../images/06_festival/fest_01.jpg") no-repeat 50% 65%; background-size: cover;}
+#content .title_bg{position: absolute; top: 0; left: 0; width: 100%; height: 450px;background: url("../images/06_festival/sub/fest_01.jpg") no-repeat 50% 65%; background-size: cover;}
 #content .tit_top{font-size: 50px; font-weight: 700; background: none; color: #bd4848;}
 
 /* #cnt2 */
-#cnt2{padding-top: 80px;}
+#cnt2{margin-top: 500px;}
 #cnt2 p:last-child{line-height: 1.5;}
 
 /* #cnt3 */
