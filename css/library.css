@@ -97,6 +97,7 @@ body{text-align: center; margin: 0 auto;}
 #footer .site_map{width: 1280px; margin: 0 auto; justify-content: space-around; padding-bottom: 30px;}
 #footer .site_map ul li h4{font-size: 20px; line-height: 1.5;}
 #footer .site_map ul li a{font-size: 16px; line-height: 4;}
+#footer .site_map ul li a:hover, #footer .site_map ul li a:focus{border-bottom: 1px solid #000;}
 #footer .address{width: 1280px; margin: 0 auto; font-size: 14px;}
 #footer .address address{position: absolute; top: 0; left: 0;}
 #footer .address p{position: absolute;}

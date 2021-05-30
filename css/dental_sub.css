@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* #header */
+#header{position: fixed; top: 0; left: 0; width: 100%;  height: 80px; padding: 0 70px; box-sizing: border-box; z-index: 800;}
+#header.bgchange{background: #bd4848;}
+#header.active::before{content: ''; position: absolute; background: #e9c7a4; top: 80px; left: 0; width: 100%; height: 49px;}
+#header > div:first-child{max-width: 1763px; margin: 0 auto; border-bottom: 1px solid #999;}
+#header .logo a{position: fixed; top: 5px; left: 70px; width: 290px; height: 70px; vertical-align: middle; background: no-repeat left center; background-size: contain; z-index: 120;}
+#header.dark .logo a {background-image:url("../images/01_common/kgr_logo_long_black.png");}
+#header.white .logo a {background-image:url("../images/01_common/kgr_logo_long_white.png");}
+#header .search a{position: fixed; top: 25px; right: 70px; width: 30px; height: 30px; background: no-repeat right top; background-size: cover; z-index: 120;}
+#header.dark .search a{background-image:url("../images/01_common/search.png");}
+#header.white .search a{background-image:url("../images/01_common/search_white.png");}
+
+#header.bgchange .logo a{background-image: url("../images/01_common/kgr_logo_long_white.png");}
+#header.bgchange .search a{background-image: url("../images/01_common/search_white.png");}

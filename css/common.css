@@ -24,8 +24,8 @@ body{font-family: SCoreDream, "맑은 고딕", "Malgun Gothic", "나눔고딕", 
 #skip a:focus{left: 0; width: 100%; background: #000; color: #fff; text-align: center; height: 50px; line-height: 50px;}
 
 /* 푸터 */
-#footer{height: 1080px; background: url("../images/01_common/footerbg.png") no-repeat; color: #fff; margin: 0 auto;}
-#footer .wrap{position: relative; padding-top: 204px; justify-content: center;}
+#footer{height: 1080px; width: 100%; background: url("../images/01_common/footerbg.png") no-repeat center top; background-size: cover; color: #fff; margin: 0 auto;}
+#footer .wrap{position: absolute; top: 0; left: calc(50% - 600px); width: 1200px; margin: 0 auto; padding-top: 210px; justify-content: center;}
 .f_block{padding-left: 25px;position: relative;margin-left: 36px;}
 .f_block::after{content: "";height: 100%;width: 6px;background: #fff;top: 0;left: 0;position: absolute;}
 
