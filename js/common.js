@@ -75,13 +75,6 @@ $(document).ready(function (){
 	});
 
 
-	// top 이동
-	$('.btn_top').on('click', function () {
-		fullpage_api.moveTo(1); //본문 1번의 위치로 자동으로 이동
-		//접근성을 위해 문서의 처음으로 포커스 강제 이동
-		$('.logo a').focus()
-	});
-
 	var scrollT;
 	var timer = 0;
   

@@ -18,13 +18,14 @@ body{text-align: center; margin: 0 auto;}
 
 #gnb, .gnb_bg{position: fixed;}
 #gnb{visibility: hidden; opacity: 0; top: 100px; right: 0; width: 100%; height: 100%; z-index: 100;}
-#gnb > ul{position: absolute; top: 20px; right: 0; width: 800px; flex-direction: row; justify-content: flex-end; flex-wrap: wrap;}
-#gnb > ul > li{width: 400px; box-sizing: border-box; padding: 0 10px 20px 0;}
+#gnb > ul{position: absolute; top: 50px; right: 100px; width: 800px; flex-direction: row; justify-content: flex-end; flex-wrap: wrap;}
+#gnb > ul > li{width: 300px; height: 250px;box-sizing: border-box; padding: 0 10px 20px 0;}
 #gnb > ul > li > a{font-size: 24px; font-weight: 700; color: #3d3e41;}
 #gnb ul li ul{padding-top: 28px;}
 #gnb ul li ul li{font-size: 16px; font-weight: 500;}
 #gnb ul li ul li + li{padding-top: 20px;}
 #gnb ul li ul li a{color: #3d3e41;}
+#gnb ul li ul li a:hover, #gnb ul li ul li a:focus{color: #bd4848; text-decoration: underline;}
 
 .gnb_bg{background: #e9c7a4; top: 0; right:0; width: 1px; height: 1px; transition: all 0.5s;}
 #gnb.active + .gnb_bg{position: absolute; top: -1030px; right: -630px; width: 1300px; height: 2200px; background: #e9c7a4; border-radius: 500px; z-index: 10;}
@@ -59,7 +60,7 @@ body{text-align: center; margin: 0 auto;}
 #cnt2 .zone3{width: 1280px;}
 #cnt2 .h340{top: 40px; left: 20px; height: 340px; background: #fff;}
 #cnt2 .sub_bg1{width: 720px;}
-#cnt2 .sub_bg1 ul{line-height: 47px;}
+#cnt2 .sub_bg1 ul{line-height: 47px; padding: 0 20px}
 #cnt2 .sub_bg1 ul li a.d_f{justify-content: space-between; border-bottom: 2px solid #a7c7e7;}
 #cnt2 .sub_bg1 ul li a:hover, #cnt2 .sub_bg1 ul li a:focus{color: #007AFF;}
 #cnt2 .sub_bg2{width: 460px;}
